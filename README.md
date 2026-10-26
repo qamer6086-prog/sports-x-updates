@@ -2,9 +2,13 @@
 
 Public Android TV releases and in-app update metadata for Sports X Next.
 
-## Latest published: 0.6.1-alpha
+## Latest published: 0.7.0-alpha
 
-0.6.1 adds Today/Tomorrow/dd/MM/yy event dates, manual EPG refresh, a cleaner channel browser and fullscreen Up/Down channel switching within the current provider.
+0.7.0 adds per-provider/profile UK or multi-country category filters with preview and manual overrides, category/channel sorting and filtered channel switching. The player includes a now/next panel, Hold OK quick actions and a TV guide timeline. Updates now has clearer status/version cards, last successful check time, download progress and foldaway Advanced settings.
+
+**UK setup:** Channels → choose provider → Smart categories & sorting → UK only → review preview → Apply filters & order. Matching uses category labels and supported country flags; no channels are deleted.
+
+The guide reads visible channel rows and two-hour windows while playback continues. Existing event dates, manual EPG refresh and the clean channel browser remain included.
 
 ### Existing features
 
@@ -26,7 +30,7 @@ The repository `qamer6086-prog/sports-x-updates` is preconfigured. You choose wh
 
 The complete application source is the separately attached **`…-public-source.zip`** release asset, licensed under GPLv3 with upstream notices included. GitHub's automatically generated source archives contain this update-host repository, not the application source.
 
-0.6.1 passed 63 unit tests, release assembly, full lint with no errors and APK signing verification. Physical TV visuals, remote focus, playback, phone pairing and scrolling performance still need testing. No on-device performance improvement is claimed.
+0.7.0 passed 71 unit tests, release assembly, full lint with no errors and APK signing verification. Physical TV visuals, remote focus, playback, phone pairing and scrolling performance still need testing. No on-device performance improvement is claimed.
 
 Feed evidence describes matching and past playback, not verified programme content. Coverage, catch-up and recording depend on the available data and the user's provider/device.
 
