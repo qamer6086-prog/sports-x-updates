@@ -2,7 +2,13 @@
 
 Public Android TV releases and in-app update metadata for Sports X Next.
 
-## Latest published: 0.7.1-alpha
+## Latest published: 0.7.2-alpha
+
+0.7.2 gives the Live TV category sidebar consistent row heights, clearer gaps, larger labels and trailing channel counts. Its source selector now opens a dropdown above the categories on the left. Opening Updates transfers remote focus to its main action so the navigation sidebar can collapse, including Settings → Updates.
+
+Physical TV spacing, provider dropdown navigation and sidebar focus still require device checking. This release changes the sidebar; the full guide/player layout redesign remains pending.
+
+### Included from 0.7.1
 
 0.7.1 makes the Channels Update EPG button refresh only the selected provider. All providers asks you to choose one. Other providers’ cached listings are retained; a shared XMLTV file still requires its complete download. Normal automatic/global updates keep their existing scope.
 
@@ -38,7 +44,7 @@ The repository `qamer6086-prog/sports-x-updates` is preconfigured. You choose wh
 
 The complete application source is the separately attached **`…-public-source.zip`** release asset, licensed under GPLv3 with upstream notices included. GitHub's automatically generated source archives contain this update-host repository, not the application source.
 
-0.7.1 passed 79 unit tests, release assembly, full lint with no errors and APK signing verification. Physical TV visuals, remote focus, playback, phone pairing and scrolling performance still need testing. No on-device performance improvement is claimed.
+0.7.2 passed 79 unit tests, release assembly, full lint with no errors and APK signing verification. Physical TV visuals, remote focus, playback, phone pairing and scrolling performance still need testing. No on-device performance improvement is claimed.
 
 Feed evidence describes matching and past playback, not verified programme content. Coverage, catch-up and recording depend on the available data and the user's provider/device.
 
