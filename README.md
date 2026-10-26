@@ -2,7 +2,15 @@
 
 Public Android TV releases and in-app update metadata for Sports X Next.
 
-## Latest: 0.6.0-alpha
+## Latest: 0.7.0-alpha
+
+Live TV now supports per-provider/profile UK or multi-country category filters, unlabelled-category controls, manual Show/Hide exceptions and a preview. Categories support provider, alphabetical and manual ordering; channels support provider, alphabetical, number, saved manual order and favourites first. Up/Down follows the filtered provider list.
+
+UK setup: Channels > choose provider > Smart categories & sorting > UK only > review preview > Apply filters & order. No channels are deleted.
+
+The player adds now/next information, Hold OK quick actions and a TV guide timeline. The guide reads visible channels in two-hour windows while playback continues. Full release notes and the APK are on the latest release page.
+
+### Existing features
 
 This release adds a navy-and-lime TV design with an expanding sidebar, sports-art Home hub, personal live/next picks and consistent event cards. Event pages bring together recommended feeds, evidence/provider labels, alternatives, available recordings and catch-up.
 
@@ -22,7 +30,7 @@ The repository `qamer6086-prog/sports-x-updates` is preconfigured. You choose wh
 
 The complete application source is the separately attached **`…-public-source.zip`** release asset, licensed under GPLv3 with upstream notices included. GitHub's automatically generated source archives contain this update-host repository, not the application source.
 
-0.6.0 passed 61 unit tests, release assembly, full lint with no errors, APK signing checks and compilation of the optional benchmark APK. Physical TV visuals, remote focus, playback, phone pairing and scrolling performance still need testing. No on-device performance improvement is claimed.
+0.7.0 passed 71 unit tests, release assembly, full lint with no errors and APK signing verification. Physical TV visuals, remote focus, playback, phone pairing and scrolling performance still need testing. No on-device performance improvement is claimed.
 
 Feed evidence describes matching and past playback, not verified programme content. Coverage, catch-up and recording depend on the available data and the user's provider/device.
 
