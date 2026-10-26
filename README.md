@@ -2,7 +2,15 @@
 
 Public Android TV releases and in-app update metadata for Sports X Next.
 
-## Latest published: 0.7.0-alpha
+## Latest published: 0.7.1-alpha
+
+0.7.1 makes the Channels Update EPG button refresh only the selected provider. All providers asks you to choose one. Other providers’ cached listings are retained; a shared XMLTV file still requires its complete download. Normal automatic/global updates keep their existing scope.
+
+The fullscreen player panel and channel preview now show source-video quality (UHD/FHD/HD/SD), exact resolution and declared frame rate, including fractional rates. Missing frame rate is shown as unavailable. Values follow the decoded track rather than the channel name or TV output mode.
+
+**The broader Live TV/EPG lag fixes remain pending.** This release does not remove the all-channel background guide load or all overlapping requests and screen updates.
+
+### Included from 0.7.0
 
 0.7.0 adds per-provider/profile UK or multi-country category filters with preview and manual overrides, category/channel sorting and filtered channel switching. The player includes a now/next panel, Hold OK quick actions and a TV guide timeline. Updates now has clearer status/version cards, last successful check time, download progress and foldaway Advanced settings.
 
@@ -30,7 +38,7 @@ The repository `qamer6086-prog/sports-x-updates` is preconfigured. You choose wh
 
 The complete application source is the separately attached **`…-public-source.zip`** release asset, licensed under GPLv3 with upstream notices included. GitHub's automatically generated source archives contain this update-host repository, not the application source.
 
-0.7.0 passed 71 unit tests, release assembly, full lint with no errors and APK signing verification. Physical TV visuals, remote focus, playback, phone pairing and scrolling performance still need testing. No on-device performance improvement is claimed.
+0.7.1 passed 79 unit tests, release assembly, full lint with no errors and APK signing verification. Physical TV visuals, remote focus, playback, phone pairing and scrolling performance still need testing. No on-device performance improvement is claimed.
 
 Feed evidence describes matching and past playback, not verified programme content. Coverage, catch-up and recording depend on the available data and the user's provider/device.
 
