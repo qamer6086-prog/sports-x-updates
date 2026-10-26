@@ -2,26 +2,28 @@
 
 Public Android TV releases and in-app update metadata for Sports X Next.
 
-## Install
+## Latest: 0.6.0-alpha
 
-[Open the latest release](https://github.com/qamer6086-prog/sports-x-updates/releases/latest) and download the `Sports-X-Next-…apk` asset. Install 0.5.0 manually once to enable the in-app updater. Android 7.0 or later is required.
+This release adds a navy-and-lime TV design with an expanding sidebar, sports-art Home hub, personal live/next picks and consistent event cards. Event pages bring together recommended feeds, evidence/provider labels, alternatives, available recordings and catch-up.
 
-This updates Sports X Next 0.2–0.4.2 in place using the retained signing identity. The original 0.1 app has a separate application ID.
+Save individual events or follow entire sports alongside teams and competitions. The local QR phone session can search fixtures and send Open/Watch requests to the TV. Playback requests recheck current live availability and visibility/parental settings. Opening the event or playback closes that temporary pairing session.
 
-## In-app updates
+Refreshes keep existing fixtures visible. Channel rows reserve selection detail space, feed ranking runs off the UI thread, and empty Live TV does not initialise a player. Diagnostics includes section-level Sports frame percentiles for device testing.
 
-Open **Settings → Updates → Check for updates**. The repository `qamer6086-prog/sports-x-updates` is preconfigured. You choose when to download, and Android asks you to confirm installation. Allow Sports X as an installation source if Android requests it. Install after active recordings finish.
+## Install or update
 
-Successful update checks run at most daily after opening the app. Future published releases need a higher version code and the same signing identity. With version 0.5.0 installed and hosted, the check should report up to date.
+[Open the latest release](https://github.com/qamer6086-prog/sports-x-updates/releases/latest) and download its `.apk` asset. Android 7.0 or later is required.
 
-Downloads require HTTPS, matching size and SHA-256, correct application ID and version, and matching installed signing certificates. No GitHub token or login is needed in the TV app.
+Existing Sports X Next 0.5.0 or later: **Settings → Updates → Check for updates → Download → Install**. Earlier Next builds can install the latest APK manually. The same application ID and retained signing key preserve compatibility with Next 0.2 and later. The original 0.1 app has a separate identity.
 
-## Source
+The repository `qamer6086-prog/sports-x-updates` is preconfigured. You choose when to download and Android confirms installation. Allow Sports X as an installation source if requested, and install after active recordings finish. Checks run at most daily after a successful check while the app is open; use the manual check for a newly published release.
 
-The complete application source is the separately attached **`…-public-source.zip`** release asset, licensed under GPLv3 with upstream notices included. GitHub's automatically generated “Source code” archives contain this update-host repository, not the application source.
+## Source and verification
 
-Private signing keys and provider credentials are not published. No IPTV service or channels are included.
+The complete application source is the separately attached **`…-public-source.zip`** release asset, licensed under GPLv3 with upstream notices included. GitHub's automatically generated source archives contain this update-host repository, not the application source.
 
-## Verification
+0.6.0 passed 61 unit tests, release assembly, full lint with no errors, APK signing checks and compilation of the optional benchmark APK. Physical TV visuals, remote focus, playback, phone pairing and scrolling performance still need testing. No on-device performance improvement is claimed.
 
-0.5.0 passed 50 unit tests, release assembly, full lint with no errors, and APK signing checks. On 26 October 2026 the public latest `update.json` URL returned HTTP 200 and its APK downloaded with the exact declared size and SHA-256. The installation and permission screens still need testing on a physical Android TV.
+Feed evidence describes matching and past playback, not verified programme content. Coverage, catch-up and recording depend on the available data and the user's provider/device.
+
+Private signing keys and provider credentials are not published. No IPTV service or channels are included. The TV updater uses HTTPS, exact size/SHA-256, application/version checks and matching installed signing certificates; no GitHub login or token is stored in the app.
