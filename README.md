@@ -2,11 +2,17 @@
 
 Public Android TV releases and in-app update metadata for Sports X Next.
 
-## Latest published: 0.7.2-alpha
+## Latest published: 0.7.3-alpha
+
+0.7.3 makes the compact TV guide the main Channels screen, with aligned channel names/logos, timed programme blocks, time headings and a current-time marker. Live preview and focused programme details sit above the guide. Categories fold away for more timeline space, and the source selector uses a single-line control. Select a different channel to preview it; select the playing channel again for fullscreen.
+
+Provider-only EPG refresh and stream resolution/FPS information remain included. Native TV layout, D-pad focus, provider guide matching and playback still need device checking. No broader playback-lag or provider-data repair is claimed.
+
+### Included from 0.7.2
 
 0.7.2 gives the Live TV category sidebar consistent row heights, clearer gaps, larger labels and trailing channel counts. Its source selector now opens a dropdown above the categories on the left. Opening Updates transfers remote focus to its main action so the navigation sidebar can collapse, including Settings → Updates.
 
-Physical TV spacing, provider dropdown navigation and sidebar focus still require device checking. This release changes the sidebar; the full guide/player layout redesign remains pending.
+Physical TV spacing, provider dropdown navigation and sidebar focus still require device checking.
 
 ### Included from 0.7.1
 
@@ -44,7 +50,7 @@ The repository `qamer6086-prog/sports-x-updates` is preconfigured. You choose wh
 
 The complete application source is the separately attached **`…-public-source.zip`** release asset, licensed under GPLv3 with upstream notices included. GitHub's automatically generated source archives contain this update-host repository, not the application source.
 
-0.7.2 passed 79 unit tests, release assembly, full lint with no errors and APK signing verification. Physical TV visuals, remote focus, playback, phone pairing and scrolling performance still need testing. No on-device performance improvement is claimed.
+The 0.7.3 APK version (code 14), application identity, size/SHA-256 and retained signing certificate were independently checked at publication. The bundled 79 unit-test reports have zero failures/errors. Historical build/lint reports are labelled in the source verification notes; no fresh build/lint run was performed during publication. Physical TV visuals, remote focus, playback, phone pairing and scrolling performance still need testing. No on-device performance improvement is claimed.
 
 Feed evidence describes matching and past playback, not verified programme content. Coverage, catch-up and recording depend on the available data and the user's provider/device.
 
